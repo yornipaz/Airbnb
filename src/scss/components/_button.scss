@@ -1,6 +1,7 @@
 @use 'abstract/variable'as v;
 @use 'abstract/mixin'as m;
 
+
 .button {
     &__primary {
         @include m.button(v.$primary, v.$secondary);
@@ -14,6 +15,11 @@
         border: 2px solid v.$white;
         margin-top: 2rem;
         display: block;
+
+    }
+
+    &__search {
+        @include m.button( v.$white,v.$primary);
 
     }
 }

@@ -11,7 +11,35 @@
 
 <body>
     <header class="header ">
-        <div class="header__wrapper container ">
+        <div class="stick container ">
+            <div class="stick__logo">
+                <p class="stick__name">Viajes</p>
+            </div>
+            <nav class="stick__navigation"><a href="#" class="stick__link">Lugares para hospedarte</a><a
+                    class="stick__link" href="#">Experiencias </a><a class="stick__link" href="#">Experiencias en
+                    linea</a></nav>
+
+            <nav class="stick__login">
+                <a class="stick__link" href="#">Haste Anfrition</a>
+            </nav>
+
+        </div>
+        <form class="form">
+            <div class="form__control"><label for="ubicacion" class="form__label">Ubicacion</label>
+                <input type="text" name="Ubicacion" placeholder="A donde viajas?" class="form__input"></div>
+            <div class="form__control"><label for="llegada" class="form__label">Llegada</label>
+                <input type="date" name="llegada" class="form__input"></div>
+            <div class="form__control"><label for="Salida" class="form__label">Salida</label>
+                <input type="date" name="Salida" class="form__input"></div>
+            <div class="form__control"><label for="huespedes" class="form__label">Huespedes</label>
+                <input type="number" name="huespedes" class="form__input" placeholder="Cuantos?"></div>
+
+            <div class="form__control">
+                <input type="submit" class="form__submit" value="Buscar"></div>
+        </form>
+        <div class="header__search container">
+            <p class="header__searchLabel">No sabes que buscar?</p>
+            <a href="#" class="button__search">Busqueda Flexible</a>
 
         </div>
 

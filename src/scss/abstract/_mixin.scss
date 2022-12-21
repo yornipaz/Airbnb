@@ -135,25 +135,16 @@
 
 @mixin button($color, $text) {
   background-color: $color;
+  padding: 2rem 4rem;
+  color: $text;
+  margin-top: 1rem;
+  border-radius: 3rem;
   font-size: 2rem;
-  padding: 1.2rem 3rem;
-  border-radius: 1rem;
   font-weight: 700;
   display: block;
-  width: 100%;
-  text-align: center;
-  color: $text;
-  text-decoration: none;
-  transition: background-color .3s ease;
-  border: none;
-
-  &:hover {
-    cursor: pointer;
-    background-color: darken($color, 10);
-  }
 
   @include screen('table') {
-    width: max-content;
+    display: inline-block;
   }
 }
 

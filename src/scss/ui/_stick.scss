@@ -1,0 +1,22 @@
+@use 'abstract/variable'as v;
+@use 'abstract/mixin'as m;
+
+.stick {
+    display: none;
+
+    @include m.screen('table') {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &____navigation {
+        display: flex;
+        gap: 4rem;
+    }
+
+    &__link,
+    &__name {
+        color: v.$white;
+    }
+}

@@ -1,4 +1,19 @@
 @use 'abstract/variable'as v;
 @use 'abstract/mixin'as m;
 
-.header {}
+.header {
+    background-image: url('../img/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+
+    &__search {
+        margin-top: 5rem;
+        text-align: center;
+
+        @include m.screen('table') {
+            margin-top: 30rem;
+        }
+    }
+}
