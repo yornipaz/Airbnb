@@ -1,0 +1,17 @@
+@use 'abstract/mixin'as m;
+@use 'abstract/variable'as v;
+
+.experience {
+    &__img{
+        border-radius: 1rem;
+
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 2rem;
+
+    }
+    &__description{
+        font-size: 1.8;
+    }
+}

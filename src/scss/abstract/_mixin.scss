@@ -186,6 +186,7 @@
   background-position: center 2rem;
   background-size: 10rem;
 }
+
 /// create scroll view horizontally 
 /// @author Felipe Bonilla
 /// @group GUATIC
@@ -198,7 +199,8 @@
   overflow-x: scroll;
   overflow-y: hidden;
   scroll-snap-type: x mandatory;
-  > *{
-    scroll-snap-align: center;
+
+  >* {
+    scroll-snap-align: start;
   }
 }

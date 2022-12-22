@@ -1,0 +1,15 @@
+@use 'abstract/mixin'as m;
+@use 'abstract/variable'as v;
+
+.experiences {
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3,30rem);
+        column-gap: 2rem;
+        @include m.scrollHorizontal;
+        @include m.screen('table') {
+            @include m.grid(3, 2rem);
+        }
+    }
+}
