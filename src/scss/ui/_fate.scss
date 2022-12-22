@@ -1,0 +1,25 @@
+@use 'abstract/variable'as v;
+@use 'abstract/mixin'as m;
+
+.fate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &__information {}
+
+    &__img {
+        height: 14rem;
+        width: 14rem;
+    }
+
+    &__name {
+        margin: 0;
+        font-size: 2.4rem;
+    }
+
+    &____distance {
+        margin: 0;
+    }
+}

@@ -1,0 +1,16 @@
+@use 'abstract/variable'as v;
+@use 'abstract/mixin'as m;
+
+.destiny {
+    &__list {
+        @include m.grid(1, 2rem);
+
+        @include m.screen('table') {
+            @include m.grid(2, 2rem);
+        }
+
+        @include m.screen('desktop') {
+            @include m.grid(4, 2rem);
+        }
+    }
+}

@@ -42,7 +42,5 @@ ul {
 .section {
   padding: 3rem 0;
 
-  @include m.screen('table') {
-    padding: 8rem 0;
-  }
+
 }
