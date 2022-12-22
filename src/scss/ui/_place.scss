@@ -1,0 +1,12 @@
+@use 'abstract/mixin'as m;
+@use 'abstract/variable'as v;
+
+.place {
+    &__img {
+        border-radius: 1rem;
+    }
+
+    &__name {
+        font-size: 1.8rem;
+    }
+}

@@ -22,4 +22,10 @@
         @include m.button( v.$white,v.$primary);
 
     }
+    &__host{
+        @include m.button( v.$white,v.$black);
+        border-radius: 1rem;
+        padding-top:1rem ;
+        padding-bottom:1rem ;
+    }
 }
